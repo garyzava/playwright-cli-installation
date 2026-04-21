@@ -35,3 +35,41 @@ Paste this into Claude Code:
 ## What to expect
 
 Three browser windows open simultaneously. Each fills out and tests the form from a different angle. Results stream back as each sub-agent finishes.
+
+## Test Results — All 21 checks PASSED
+
+### Sub-agent 1 — Happy Path
+
+| Check | Result |
+|---|---|
+| Fill all fields with valid data | PASS |
+| Submit button enabled after Terms checked | PASS |
+| Success message: "Thank you, Jane Smith! Your message has been sent." | PASS |
+| "Send another" resets all fields | PASS |
+
+### Sub-agent 2 — Validation
+
+| Check | Result |
+|---|---|
+| Empty submit shows all required-field errors | PASS |
+| 1-char name: "Name must be at least 2 characters." | PASS |
+| Invalid email: "Please enter a valid email address." | PASS |
+| Invalid phone: "Phone may only contain digits, dashes, parentheses, and spaces." | PASS |
+| 5-char message: "Message must be at least 10 characters." | PASS |
+| Terms unchecked: submit button disabled | PASS |
+
+### Sub-agent 3 — Edge Cases
+
+| Check | Result |
+|---|---|
+| 500-char message: counter shows "500 / 500" | PASS |
+| Typing beyond 500 chars blocked by maxlength | PASS |
+| Unicode name "María García-López" renders correctly in success message | PASS |
+| Terms checkbox toggles submit button enabled/disabled | PASS |
+| "Send another" clears all fields after submit | PASS |
+
+### Screenshots
+
+- `happy-path-result.png`
+- `validation-result.png`
+- `edge-cases-result.png`
