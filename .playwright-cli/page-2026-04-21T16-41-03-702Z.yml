@@ -1,0 +1,5 @@
+- generic [ref=e30]:
+  - img [ref=e32]
+  - heading "Message Sent!" [level=2] [ref=e34]
+  - paragraph [ref=e35]: Thank you, Jane Smith! Your message has been sent.
+  - text: Send another message

@@ -1,0 +1,40 @@
+- generic [ref=e3]:
+  - heading "Contact Us" [level=1] [ref=e4]
+  - paragraph [ref=e5]: We'd love to hear from you. Fill out the form below.
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Full Name
+      - textbox "Full Name" [ref=e9]:
+        - /placeholder: Jane Smith
+      - generic [ref=e30]: Full name is required.
+    - generic [ref=e10]:
+      - generic [ref=e11]: Email
+      - textbox "Email" [ref=e12]:
+        - /placeholder: jane@example.com
+      - generic [ref=e31]: Email is required.
+    - generic [ref=e13]:
+      - generic [ref=e14]: Phone (optional)
+      - textbox "Phone (optional)" [ref=e15]:
+        - /placeholder: 555-123-4567
+    - generic [ref=e16]:
+      - generic [ref=e17]: Subject
+      - combobox "Subject" [ref=e18]:
+        - option "-- Select --" [selected]
+        - option "General Inquiry"
+        - option "Support"
+        - option "Feedback"
+        - option "Other"
+      - generic [ref=e32]: Please select a subject.
+    - generic [ref=e19]:
+      - generic [ref=e20]: Message
+      - textbox "Message" [ref=e21]:
+        - /placeholder: Tell us what's on your mind...
+      - generic [ref=e22]: 0 / 500
+      - generic [ref=e33]: Message is required.
+    - generic [ref=e23]:
+      - checkbox "Subscribe to our newsletter" [ref=e24]
+      - generic [ref=e25]: Subscribe to our newsletter
+    - generic [ref=e26]:
+      - checkbox "I agree to the Terms and Conditions" [checked] [ref=e27]
+      - generic [ref=e28]: I agree to the Terms and Conditions
+    - button "Submit" [active] [ref=e29] [cursor=pointer]
