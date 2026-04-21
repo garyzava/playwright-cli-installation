@@ -56,6 +56,10 @@ The difference is in how that tree reaches Claude Code:
 
 The CLI can do everything the MCP server can do -- and more -- at a fraction of the token cost. The Chrome extension is the least efficient option across every dimension.
 
+## Demo
+
+See [DEMO.md](DEMO.md) for a hands-on demo that runs 3 parallel sub-agents to test a contact form from different angles (happy path, validation, edge cases).
+
 ## Source
 
 Based on: [Playwright CLI for Claude Code](https://www.youtube.com/watch?v=I9kO6-yPkfM) by Chase Lean (Chase AI Plus)
