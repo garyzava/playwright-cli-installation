@@ -1,0 +1,9 @@
+# Playwright CLI artifacts
+.playwright-cli/
+.playwright/
+
+# OS
+.DS_Store
+
+# Node
+node_modules/
