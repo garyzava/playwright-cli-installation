@@ -28,6 +28,12 @@ Downloads the Chromium browser engine that Playwright uses under the hood. To us
 playwright-cli install --skills
 ```
 
+### Note: Global Installation for all Claude Projects
+
+```bash
+claude mcp add -s user playwright -- npx @playwright/mcp@latest
+```
+
 Installs the Playwright skill into your Claude Code project so it knows how to use the CLI. The skill is a living document -- you can edit, audit, or recreate it with the skill creator.
 
 > **Note:** This installs the skill to the current project only (`.claude/skills/`). To make it available globally across all projects, copy the skill to `~/.claude/skills/playwright-cli/`.
